@@ -1,32 +1,28 @@
 import dateIcon from "../../assets/dateIcon.png";
-function TicketCard({ tickets }) {
-  console.log(tickets);
+function TicketCard({ ticket }) {
+  console.log(ticket);
+  const { title, description, customer, priority, status, createdAt } = ticket;
   return (
     <>
       <div className="px-4 py-6 bg-white shadow">
         <div className="flex justify-between items-center mb-2">
-          <h3 className="font-semibold text-gray-800">
-            Login Issues - Can't Access Account
-          </h3>
-          <button>Open</button>
+          <h3 className="font-semibold text-gray-800">{title}</h3>
+          <button>{status}</button>
         </div>
-        <p className="text-sm text-gray-600 mb-5">
-          Customer is unable to log in to their account. They've tried resetting
-          their password multiple times but still...
-        </p>
+        <p className="text-sm text-gray-600 mb-5">{description}</p>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 text-sm">
             <p className="text-gray-600">#1001</p>
             <p className="uppercase text-red-500 font-semibold">
-              High Priority
+              {priority} Priority
             </p>
           </div>
 
           <div className="flex items-center gap-2 text-sm">
-            <p className="text-gray-600">Jhon Smith</p>
+            <p className="text-gray-600">{customer}</p>
             <div className="flex items-center gap-1">
               <img className="w-4" src={dateIcon} alt="" />
-              <p>1/16/2024</p>
+              <p>{createdAt}</p>
             </div>
           </div>
         </div>
