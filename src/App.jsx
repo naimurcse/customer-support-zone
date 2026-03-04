@@ -19,12 +19,15 @@ function App() {
       {/* Main Section */}
 
       <div className="max-w-10/12 mx-auto">
-        <div className="grid grid-cols-12 gap-5 order-2 md:order-1">
-          <div className=" col-span-12 xl:col-span-9 ">
+        <div className="grid grid-cols-12 gap-5">
+          {/* Customer Tickets */}
+          <div className=" col-span-12 xl:col-span-9 order-2 xl:order-1">
             {/* Tickets */}
             <Tickets ticketsPromise={ticketsPromise}></Tickets>
           </div>
-          <div className="col-span-12 xl:col-span-3 order-1 md:order-2">
+
+          {/* Task Status and Resolved Task */}
+          <div className="col-span-12 xl:col-span-3 order-1 xl:order-2">
             {/* Task Status */}
             <div className="mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-1">
