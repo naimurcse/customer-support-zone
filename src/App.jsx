@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
+import LoadingSpinner from "./Components/LoadingSpinner/LoaderSpining";
 import Navber from "./Components/Navber/Navber";
 import Tickets from "./Components/Tickets/Tickets";
 
@@ -23,7 +25,9 @@ function App() {
           {/* Customer Tickets */}
           <div className=" col-span-12 xl:col-span-9 order-2 xl:order-1">
             {/* Tickets */}
-            <Tickets ticketsPromise={ticketsPromise}></Tickets>
+            <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
+              <Tickets ticketsPromise={ticketsPromise}></Tickets>
+            </Suspense>
           </div>
 
           {/* Task Status and Resolved Task */}
