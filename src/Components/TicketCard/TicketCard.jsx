@@ -1,4 +1,5 @@
 import dateIcon from "../../assets/dateIcon.png";
+import "./TicketCard.css";
 function TicketCard({ ticket }) {
   console.log(ticket);
   const { title, description, customer, priority, status, createdAt, id } =
@@ -7,8 +8,18 @@ function TicketCard({ ticket }) {
     <>
       <div className="px-4 py-6 bg-white shadow flex flex-col justify-between">
         <div className="md:flex md:justify-between md:items-center mb-2 ">
-          <button className="ml-0 order-1 md:order-2 mb-4 md:mb-0">
-            {status}
+          <button className="ml-0 order-1 md:order-2 mb-4 md:mb-0 status-btn">
+            <span
+              className={
+                status.toLowerCase() === "in-progress"
+                  ? "text-yellow-600 bg-yellow-100"
+                  : status.toLowerCase() === "open"
+                    ? "text-green-700 bg-green-100"
+                    : "text-gray-500 bg-gray-100"
+              }
+            >
+              {status}
+            </span>
           </button>
           <h3 className="text-xl font-semibold text-gray-800 order-2 md:order-1">
             {title}

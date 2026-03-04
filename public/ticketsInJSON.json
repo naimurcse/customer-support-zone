@@ -14,7 +14,7 @@
     "description": "The product arrived broken and unusable. I would like a replacement.",
     "customer": "Nusrat Jahan",
     "priority": "High",
-    "status": "In Progress",
+    "status": "In-Progress",
     "createdAt": "01/03/2026"
   },
   {
@@ -50,7 +50,7 @@
     "description": "My payment shows failed but the amount was deducted from my bank account.",
     "customer": "Mim Rahman",
     "priority": "High",
-    "status": "In Progress",
+    "status": "In-Progress",
     "createdAt": "04/03/2026"
   },
   {
@@ -77,7 +77,7 @@
     "description": "My account was suspended without any explanation.",
     "customer": "Jahid Karim",
     "priority": "High",
-    "status": "In Progress",
+    "status": "In-Progress",
     "createdAt": "02/03/2026"
   },
   {
@@ -113,7 +113,7 @@
     "description": "I would like to exchange the product for a different size.",
     "customer": "Imran Ali",
     "priority": "Medium",
-    "status": "In Progress",
+    "status": "In-Progress",
     "createdAt": "25/02/2026"
   },
   {

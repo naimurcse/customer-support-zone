@@ -19,12 +19,11 @@ function App() {
       <Banner></Banner>
 
       {/* Main Section */}
-
       <div className="max-w-10/12 mx-auto">
         <div className="grid grid-cols-12 gap-5">
           {/* Customer Tickets */}
           <div className=" col-span-12 xl:col-span-9 order-2 xl:order-1">
-            {/* Tickets */}
+            {/* Tickets are loaded here*/}
             <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
               <Tickets ticketsPromise={ticketsPromise}></Tickets>
             </Suspense>
