@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer-section bg-black text-white mt-15 pt-16 pb-8">
       {/* Footer Upper Part */}
-      <div className="footer-upper max-w-10/12 mx-auto border-b-1 border-gray-500 pb-8 mb-8">
+      <div className="footer-upper max-w-10/12 mx-auto border-b-2 border-gray-800 pb-8 mb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 2xl:grid-cols-6 gap-8  xl:gap-1 2xl:gap-12">
           <div className="md:col-span-2 lg:pr-20">
             <h3 className="font-bold text-2xl mb-4">CS — Ticket System</h3>
