@@ -33,7 +33,7 @@ function App() {
           <div className="col-span-12 xl:col-span-3 order-1 xl:order-2">
             {/* Task Status */}
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-1">
+              <h3 className="text-2xl font-bold text-gray-700 mb-1">
                 Task Status
               </h3>
               <p className="text-gray-500 text-sm">
@@ -43,7 +43,7 @@ function App() {
 
             {/* Resolved Task */}
             <div className="mb-5">
-              <h3 className="text-xl font-bold text-gray-800  mb-1">
+              <h3 className="text-2xl font-bold text-gray-700  mb-1">
                 Resolved Task
               </h3>
               <p className="text-gray-500 text-sm">No resolved tasks yet.</p>

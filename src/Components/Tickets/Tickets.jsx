@@ -6,7 +6,9 @@ function Tickets({ ticketsPromise }) {
   console.log(tickets);
   return (
     <>
-      <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Tickets</h3>
+      <h3 className="text-2xl font-bold text-gray-700 mb-2">
+        Customer Tickets
+      </h3>
 
       {/* Ticket Cards in two columns */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
