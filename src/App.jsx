@@ -6,12 +6,19 @@ import Navber from "./Components/Navber/Navber";
 function App() {
   return (
     <>
+      {/* Navber Section */}
       <Navber></Navber>
+
+      {/* Banner Section */}
       <Banner></Banner>
+
+      {/* Main Section */}
       <div className="gird gird">
         <div>Customer Tickets</div>
         <div> Task Status/Resolved Task</div>
       </div>
+
+      {/* Footer Section */}
       <Footer></Footer>
     </>
   );
