@@ -1,5 +1,5 @@
 import { use } from "react";
-import dateIcon from "../../assets/dateIcon.png";
+import TicketCard from "../TicketCard/TicketCard";
 
 function Tickets({ ticketsPromise }) {
   const tickets = use(ticketsPromise);
@@ -7,8 +7,11 @@ function Tickets({ ticketsPromise }) {
   return (
     <>
       <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Tickets</h3>
-      <div className="grid grid-cols-2 gap-3">
-        <div className="px-4 py-6 bg-white shadow">
+
+      {/* Ticket Cards in two columns */}
+      <div className="grid grid-cols-2 gap-5">
+        {/* Ticket Card */}
+        {/* <div className="px-4 py-6 bg-white shadow">
           <div className="flex justify-between items-center mb-2">
             <h3 className="font-semibold text-gray-800">
               Login Issues - Can't Access Account
@@ -35,8 +38,11 @@ function Tickets({ ticketsPromise }) {
               </div>
             </div>
           </div>
-        </div>
-        <div></div>
+        </div> */}
+
+        {tickets.map((ticket) => (
+          <TicketCard key={ticket.id} ticket={ticket}></TicketCard>
+        ))}
       </div>
     </>
   );
