@@ -1,0 +1,19 @@
+.new-ticket-btn {
+  background: #632ee3;
+  background: linear-gradient(
+    93deg,
+    rgba(99, 46, 227, 1) 0%,
+    rgba(159, 98, 242, 1) 100%
+  );
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.new-ticket-btn:hover {
+  background: #632ee3;
+  background: linear-gradient(
+    93deg,
+    rgba(159, 98, 242, 1) 0%,
+    rgba(99, 46, 227, 1) 100%
+  );
+}
