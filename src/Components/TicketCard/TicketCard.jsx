@@ -13,7 +13,10 @@ function TicketCard({ ticket }) {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 text-sm">
             <p className="text-gray-600">#1001</p>
-            <p className="uppercase text-red-500 font-semibold">
+            <p
+              className="uppercase font-semibold"
+              className={priority.toLowerCase() === "high" && "text-red-500"}
+            >
               {priority} Priority
             </p>
           </div>
