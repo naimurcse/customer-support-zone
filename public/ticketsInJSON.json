@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Order not delivered",
+    "description": "I placed an order 7 days ago but it has not been delivered yet.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-01T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Received damaged product",
+    "description": "The product arrived broken and unusable. I would like a replacement.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-01T11:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Wrong item received",
+    "description": "I received a different item than what I ordered.",
+    "customer": "Tanvir Hasan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-01T13:45:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Refund not processed",
+    "description": "I returned the product but haven't received my refund yet.",
+    "customer": "Farzana Akter",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-02T08:20:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Unable to login",
+    "description": "I cannot log into my account even after resetting my password.",
+    "customer": "Shakil Ahmed",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-03-02T10:05:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Payment failed but charged",
+    "description": "My payment shows failed but the amount was deducted from my bank account.",
+    "customer": "Mim Rahman",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-02T12:40:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Coupon code not working",
+    "description": "The discount coupon I received is not applying at checkout.",
+    "customer": "Arif Hossain",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-02T14:10:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Delayed shipment update",
+    "description": "Tracking information has not been updated for 3 days.",
+    "customer": "Sadia Islam",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-03-03T09:00:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Account suspended",
+    "description": "My account was suspended without any explanation.",
+    "customer": "Jahid Karim",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-03T10:25:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Change delivery address",
+    "description": "I need to change my delivery address after placing the order.",
+    "customer": "Ritu Sultana",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-03-03T11:50:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Product missing in package",
+    "description": "One item from my order was missing in the delivered package.",
+    "customer": "Mahmudul Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03T13:15:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Invoice download issue",
+    "description": "I am unable to download the invoice from my order history.",
+    "customer": "Lamia Chowdhury",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-03T14:30:00Z"
+  },
+  {
+    "id": 13,
+    "title": "Size exchange request",
+    "description": "I would like to exchange the product for a different size.",
+    "customer": "Imran Ali",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-04T08:45:00Z"
+  },
+  {
+    "id": 14,
+    "title": "App crashing during checkout",
+    "description": "The mobile app crashes every time I try to complete my purchase.",
+    "customer": "Tania Rahman",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04T09:30:00Z"
+  },
+  {
+    "id": 15,
+    "title": "Loyalty points not updated",
+    "description": "My loyalty points were not added after completing my recent purchase.",
+    "customer": "Kamal Hossain",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-03-04T10:00:00Z"
+  }
+]
