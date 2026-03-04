@@ -1,4 +1,5 @@
 import "./App.css";
+import Banner from "./Components/Banner/Banner";
 import Navber from "./Components/Navber/Navber";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div>
         <Navber></Navber>
+        <Banner></Banner>
         <h1>Vite + React</h1>
       </div>
     </>

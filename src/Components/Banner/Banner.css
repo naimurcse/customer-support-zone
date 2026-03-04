@@ -1,0 +1,27 @@
+.banner-section .in-progress-card {
+  background: #632ee3;
+  background-image:
+    url(../../assets/vector1.png), url(../../assets/vector2.png),
+    linear-gradient(178deg, rgba(99, 46, 227, 1) 0%, rgba(159, 98, 242, 1) 100%);
+  color: #fff;
+  background-size: contain;
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+.banner-section .resolved-card {
+  background: #00827a;
+  background:
+    url(../../assets/vector1.png), url(../../assets/vector2.png),
+    linear-gradient(260deg, rgba(0, 130, 122, 1) 0%, rgba(84, 207, 104, 1) 100%);
+  color: #fff;
+  background-size: contain;
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+
+.vector-img-1 {
+  background-image: url("../../assets/vector1.png");
+  background-size: cover; /* or contain, or a specific size */
+  background-position: center;
+  background-repeat: no-repeat;
+}
