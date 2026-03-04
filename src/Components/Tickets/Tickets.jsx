@@ -9,7 +9,7 @@ function Tickets({ ticketsPromise }) {
       <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Tickets</h3>
 
       {/* Ticket Cards in two columns */}
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Ticket Card */}
         {/* <div className="px-4 py-6 bg-white shadow">
           <div className="flex justify-between items-center mb-2">

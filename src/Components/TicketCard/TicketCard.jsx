@@ -5,7 +5,7 @@ function TicketCard({ ticket }) {
     ticket;
   return (
     <>
-      <div className="px-4 py-6 bg-white shadow">
+      <div className="px-4 py-6 bg-white shadow flex flex-col justify-between">
         <div className="flex justify-between items-center mb-2">
           <h3 className="font-semibold text-gray-800">{title}</h3>
           <button>{status}</button>
@@ -16,7 +16,13 @@ function TicketCard({ ticket }) {
             <p className="text-gray-600">#{id}</p>
             <p
               className="uppercase font-semibold"
-              className={priority.toLowerCase() === "high" && "text-red-500"}
+              className={
+                priority.toLowerCase() === "high"
+                  ? "text-red-500"
+                  : priority.toLowerCase() === "medium"
+                    ? "text-orange-500"
+                    : "text-green-500"
+              }
             >
               {priority} Priority
             </p>
