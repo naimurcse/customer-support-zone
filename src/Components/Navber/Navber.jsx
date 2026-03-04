@@ -2,8 +2,8 @@ import "./Navber.css";
 function Navber() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm xl:px-20 2xl:px-28">
-        <div className="navbar-start">
+      <div className="navbar bg-base-100 shadow-sm xl:px-24 2xl:px-28">
+        <div className="navbar-start w-5/12">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost xl:hidden">
               <svg
@@ -27,45 +27,46 @@ function Navber() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a href="App">Home</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a href="#">FAQ</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a href="#">Changelog</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Download</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">CS — Ticket System</a>
         </div>
-        <div className="navbar-end ">
+        <div className="navbar-end w-7/12">
           <ul className="menu menu-horizontal px-2 hidden xl:flex">
             <li>
-              <a>Home</a>
+              <a href="App">Home</a>
             </li>
             <li>
-              <a>FAQ</a>
+              <a href="#">FAQ</a>
             </li>
             <li>
-              <a>Changelog</a>
+              <a href="#">Changelog</a>
             </li>
             <li>
-              <a>Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li>
-              <a>Download</a>
+              <a href="#">Download</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#">Contact</a>
             </li>
           </ul>
           <a className="btn btn-lg new-ticket-btn hidden md:flex">

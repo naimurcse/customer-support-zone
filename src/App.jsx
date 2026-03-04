@@ -18,7 +18,7 @@ function App() {
       <div className="max-w-10/12 mx-auto">
         <div className="grid grid-cols-12 gap-5">
           <div className=" col-span-9 ">
-            <h3 className="text-xl font-bold text-gray-800 mb-1">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
               Customer Tickets
             </h3>
             <div className="grid grid-cols-2 gap-3">
