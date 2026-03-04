@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 1001,
     "title": "Order not delivered",
     "description": "I placed an order 7 days ago but it has not been delivered yet.",
     "customer": "Rahim Uddin",
@@ -9,7 +9,7 @@
     "createdAt": "01/03/2026"
   },
   {
-    "id": 2,
+    "id": 1002,
     "title": "Received damaged product",
     "description": "The product arrived broken and unusable. I would like a replacement.",
     "customer": "Nusrat Jahan",
@@ -18,7 +18,7 @@
     "createdAt": "01/03/2026"
   },
   {
-    "id": 3,
+    "id": 1003,
     "title": "Wrong item received",
     "description": "I received a different item than what I ordered.",
     "customer": "Tanvir Hasan",
@@ -27,7 +27,7 @@
     "createdAt": "02/03/2026"
   },
   {
-    "id": 4,
+    "id": 1004,
     "title": "Refund not processed",
     "description": "I returned the product but haven't received my refund yet.",
     "customer": "Farzana Akter",
@@ -36,7 +36,7 @@
     "createdAt": "28/02/2026"
   },
   {
-    "id": 5,
+    "id": 1005,
     "title": "Unable to login",
     "description": "I cannot log into my account even after resetting my password.",
     "customer": "Shakil Ahmed",
@@ -45,7 +45,7 @@
     "createdAt": "03/03/2026"
   },
   {
-    "id": 6,
+    "id": 1006,
     "title": "Payment failed but charged",
     "description": "My payment shows failed but the amount was deducted from my bank account.",
     "customer": "Mim Rahman",
@@ -54,7 +54,7 @@
     "createdAt": "04/03/2026"
   },
   {
-    "id": 7,
+    "id": 1007,
     "title": "Coupon code not working",
     "description": "The discount coupon I received is not applying at checkout.",
     "customer": "Arif Hossain",
@@ -63,7 +63,7 @@
     "createdAt": "25/02/2026"
   },
   {
-    "id": 8,
+    "id": 1008,
     "title": "Delayed shipment update",
     "description": "Tracking information has not been updated for 3 days.",
     "customer": "Sadia Islam",
@@ -72,7 +72,7 @@
     "createdAt": "27/02/2026"
   },
   {
-    "id": 9,
+    "id": 1009,
     "title": "Account suspended",
     "description": "My account was suspended without any explanation.",
     "customer": "Jahid Karim",
@@ -81,7 +81,7 @@
     "createdAt": "02/03/2026"
   },
   {
-    "id": 10,
+    "id": 1010,
     "title": "Change delivery address",
     "description": "I need to change my delivery address after placing the order.",
     "customer": "Ritu Sultana",
@@ -90,7 +90,7 @@
     "createdAt": "18/02/2026"
   },
   {
-    "id": 11,
+    "id": 1011,
     "title": "Product missing in package",
     "description": "One item from my order was missing in the delivered package.",
     "customer": "Mahmudul Hasan",
@@ -99,7 +99,7 @@
     "createdAt": "04/02/2026"
   },
   {
-    "id": 12,
+    "id": 1012,
     "title": "Invoice download issue",
     "description": "I am unable to download the invoice from my order history.",
     "customer": "Lamia Chowdhury",
@@ -108,7 +108,7 @@
     "createdAt": "01/03/2026"
   },
   {
-    "id": 13,
+    "id": 1013,
     "title": "Size exchange request",
     "description": "I would like to exchange the product for a different size.",
     "customer": "Imran Ali",
@@ -117,7 +117,7 @@
     "createdAt": "25/02/2026"
   },
   {
-    "id": 14,
+    "id": 1014,
     "title": "App crashing during checkout",
     "description": "The mobile app crashes every time I try to complete my purchase.",
     "customer": "Tania Rahman",
@@ -126,7 +126,7 @@
     "createdAt": "26/02/2026"
   },
   {
-    "id": 15,
+    "id": 1015,
     "title": "Loyalty points not updated",
     "description": "My loyalty points were not added after completing my recent purchase.",
     "customer": "Kamal Hossain",

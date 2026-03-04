@@ -1,7 +1,8 @@
 import dateIcon from "../../assets/dateIcon.png";
 function TicketCard({ ticket }) {
   console.log(ticket);
-  const { title, description, customer, priority, status, createdAt } = ticket;
+  const { title, description, customer, priority, status, createdAt, id } =
+    ticket;
   return (
     <>
       <div className="px-4 py-6 bg-white shadow">
@@ -12,7 +13,7 @@ function TicketCard({ ticket }) {
         <p className="text-sm text-gray-600 mb-5">{description}</p>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 text-sm">
-            <p className="text-gray-600">#1001</p>
+            <p className="text-gray-600">#{id}</p>
             <p
               className="uppercase font-semibold"
               className={priority.toLowerCase() === "high" && "text-red-500"}
