@@ -1,0 +1,12 @@
+.footer-p-text,
+.footer-section a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a1a1a1;
+  line-height: 24px;
+  /* text-align: justify; */
+}
+
+.footer-section ul > li {
+  margin-bottom: 12px;
+}
