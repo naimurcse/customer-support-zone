@@ -94,7 +94,7 @@ function Footer() {
       </div>
 
       {/* Footer Lower Part */}
-      <p className="text-center footer-p-text">
+      <p className="text-center text-sm md:footer-p-text text-gray-400">
         © 2026 CS — Ticket System. All rights reserved.
       </p>
     </footer>
