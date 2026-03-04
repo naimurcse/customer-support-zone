@@ -8,8 +8,8 @@ function Footer() {
     <footer className="footer-section bg-black text-white mt-15 pt-16 pb-8">
       {/* Footer Upper Part */}
       <div className="footer-upper max-w-10/12 mx-auto border-b-1 border-gray-500 pb-8 mb-8">
-        <div className="grid grid-cols-5 md:grid-cols-6 gap-12">
-          <div className="md:col-span-2 md:pr-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 2xl:grid-cols-6 gap-8  xl:gap-1 2xl:gap-12">
+          <div className="md:col-span-2 lg:pr-20">
             <h3 className="font-bold text-2xl mb-4">CS — Ticket System</h3>
             <p className="footer-p-text">
               Our Customer Support Ticket System is designed to simplify and
@@ -73,19 +73,19 @@ function Footer() {
             <h4 className="text-xl font-semibold mb-5">Social Links</h4>
             <ul className="not-first:">
               <li className="flex gap-2">
-                <img className="w-6" src={xLogo} alt="" />
+                <img className="w-5 2xl:w-6" src={xLogo} alt="" />
                 <a href="#">@CS-Ticket System</a>
               </li>
               <li className="flex gap-2">
-                <img className="w-6" src={inLogo} alt="" />
+                <img className="w-5 2xl:w-6" src={inLogo} alt="" />
                 <a href="#">@CS-Ticket System</a>
               </li>
               <li className="flex gap-2">
-                <img className="w-6" src={fbLogo} alt="" />
+                <img className="w-5 2xl:w-6" src={fbLogo} alt="" />
                 <a href="#">@CS-Ticket System</a>
               </li>
               <li className="flex gap-2">
-                <img className="w-6" src={emailLogo} alt="" />
+                <img className="w-5 2xl:w-6" src={emailLogo} alt="" />
                 <a href="#">support@cst.com</a>
               </li>
             </ul>
