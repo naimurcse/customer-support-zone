@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import dateIcon from "../../assets/dateIcon.png";
 import "./TicketCard.css";
 function TicketCard({ ticket, setInProgressTickets, inProgressTickets }) {
@@ -12,7 +13,10 @@ function TicketCard({ ticket, setInProgressTickets, inProgressTickets }) {
   return (
     <>
       <div
-        onClick={() => handleTickets(ticket)}
+        onClick={() => {
+          handleTickets(ticket);
+          toast("Ticket is added successfully!");
+        }}
         className="ticket-card px-4 py-6 bg-white shadow flex flex-col justify-between"
       >
         <div className="md:flex md:justify-between md:items-center mb-2 ">

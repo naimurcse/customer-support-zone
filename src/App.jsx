@@ -13,15 +13,18 @@ const ticketsPromise = fetch("/ticketsInJSON.json").then((res) => res.json());
 
 function App() {
   const [inProgressTickets, setInProgressTickets] = useState([]);
-  console.log(inProgressTickets);
+  console.log(inProgressTickets.length);
+  // const [inProgressNumber, setInProgressNumber] = useState(0);
+  // setInProgressNumber(inProgressTickets.length);
 
+  const inProgressNumber = inProgressTickets.length;
   return (
     <>
       {/* Navber Section */}
       <Navber></Navber>
 
       {/* Banner Section */}
-      <Banner></Banner>
+      <Banner inProgressNumber={inProgressNumber}></Banner>
 
       {/* Main Section */}
       <div className="max-w-10/12 mx-auto">

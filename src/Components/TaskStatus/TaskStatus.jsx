@@ -17,6 +17,7 @@ function TaskStatus({ inProgressTickets }) {
             {inProgressTickets.map((progressTicket) => (
               <InProgressTicket
                 progressTicket={progressTicket}
+                key={progressTicket.id}
               ></InProgressTicket>
             ))}
           </div>
