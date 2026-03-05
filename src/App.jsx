@@ -13,18 +13,28 @@ const ticketsPromise = fetch("/ticketsInJSON.json").then((res) => res.json());
 
 function App() {
   const [inProgressTickets, setInProgressTickets] = useState([]);
-  console.log(inProgressTickets.length);
+  // console.log(inProgressTickets.length);
   // const [inProgressNumber, setInProgressNumber] = useState(0);
   // setInProgressNumber(inProgressTickets.length);
+  const [completedTickets, setCompletedTickets] = useState([]);
+  // const removeTickets = (p) => {
+  //   console.log(p);
+  // };
+  console.log(completedTickets);
 
+  console.log(completedTickets);
   const inProgressNumber = inProgressTickets.length;
+  const resolvedNumber = completedTickets.length;
   return (
     <>
       {/* Navber Section */}
       <Navber></Navber>
 
       {/* Banner Section */}
-      <Banner inProgressNumber={inProgressNumber}></Banner>
+      <Banner
+        inProgressNumber={inProgressNumber}
+        resolvedNumber={resolvedNumber}
+      ></Banner>
 
       {/* Main Section */}
       <div className="max-w-10/12 mx-auto">
@@ -44,10 +54,14 @@ function App() {
           {/* Task Status and Resolved Task */}
           <div className="col-span-12 xl:col-span-3 order-1 xl:order-2">
             {/* Task Status */}
-            <TaskStatus inProgressTickets={inProgressTickets}></TaskStatus>
+            <TaskStatus
+              inProgressTickets={inProgressTickets}
+              setCompletedTickets={setCompletedTickets}
+              completedTickets={completedTickets}
+            ></TaskStatus>
 
             {/* Resolved Task */}
-            <ResolvedTask></ResolvedTask>
+            <ResolvedTask completedTickets={completedTickets}></ResolvedTask>
           </div>
         </div>
       </div>

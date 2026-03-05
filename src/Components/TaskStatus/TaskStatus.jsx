@@ -1,6 +1,10 @@
 import InProgressTicket from "../InProgressTicket/InProgressTicket";
 import "./TaskStatus.css";
-function TaskStatus({ inProgressTickets }) {
+function TaskStatus({
+  inProgressTickets,
+  setCompletedTickets,
+  completedTickets,
+}) {
   return (
     <>
       <div className="mb-8">
@@ -17,6 +21,8 @@ function TaskStatus({ inProgressTickets }) {
             {inProgressTickets.map((progressTicket) => (
               <InProgressTicket
                 progressTicket={progressTicket}
+                setCompletedTickets={setCompletedTickets}
+                completedTickets={completedTickets}
                 key={progressTicket.id}
               ></InProgressTicket>
             ))}

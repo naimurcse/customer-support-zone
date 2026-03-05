@@ -1,6 +1,14 @@
 import { toast } from "react-toastify";
-function InProgressTicket({ progressTicket }) {
+function InProgressTicket({
+  progressTicket,
+  setCompletedTickets,
+  completedTickets,
+}) {
   const { title } = progressTicket;
+  //   console.log(setCompletedTickets);
+  const handleCompleteTicket = (ticket) => {
+    setCompletedTickets([ticket, ...completedTickets]);
+  };
   return (
     <>
       <div className="bg-white ticket-card px-3 py-4 mb-5">
@@ -8,6 +16,7 @@ function InProgressTicket({ progressTicket }) {
         <button
           onClick={() => {
             toast("The task is Completed!");
+            handleCompleteTicket(progressTicket);
           }}
           className="btn btn-block bg-[#02A53B] text-white"
         >
