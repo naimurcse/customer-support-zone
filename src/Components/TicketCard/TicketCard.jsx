@@ -6,7 +6,7 @@ function TicketCard({ ticket }) {
     ticket;
   return (
     <>
-      <div className="px-4 py-6 bg-white shadow flex flex-col justify-between">
+      <div className="ticket-card px-4 py-6 bg-white shadow flex flex-col justify-between">
         <div className="md:flex md:justify-between md:items-center mb-2 ">
           <button className="ml-0 order-1 md:order-2 mb-4 md:mb-0 status-btn">
             <span
