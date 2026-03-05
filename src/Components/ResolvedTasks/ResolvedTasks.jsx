@@ -1,7 +1,7 @@
 import ResolvedTask from "../ResolvedTask/ResolvedTask";
 
 function ResolvedTasks({ completedTickets }) {
-  console.log(completedTickets);
+  // console.log(completedTickets);
   return (
     <>
       <div className="mb-5">

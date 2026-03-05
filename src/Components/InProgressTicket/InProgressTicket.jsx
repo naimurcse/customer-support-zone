@@ -3,11 +3,14 @@ function InProgressTicket({
   progressTicket,
   setCompletedTickets,
   completedTickets,
+  removeTickets,
 }) {
   const { title } = progressTicket;
-  //   console.log(setCompletedTickets);
+  //   console.log(removeTickets);
   const handleCompleteTicket = (ticket) => {
     setCompletedTickets([ticket, ...completedTickets]);
+
+    removeTickets(ticket);
   };
   return (
     <>

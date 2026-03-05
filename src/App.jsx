@@ -13,15 +13,13 @@ const ticketsPromise = fetch("/ticketsInJSON.json").then((res) => res.json());
 
 function App() {
   const [inProgressTickets, setInProgressTickets] = useState([]);
-  // console.log(inProgressTickets.length);
-  // const [inProgressNumber, setInProgressNumber] = useState(0);
-  // setInProgressNumber(inProgressTickets.length);
   const [completedTickets, setCompletedTickets] = useState([]);
-  // const removeTickets = (p) => {
-  //   console.log(p);
-  // };
-  console.log(inProgressTickets);
-  console.log(completedTickets);
+  const removeTickets = (p) => {
+    const stillUnsolved = inProgressTickets.filter(
+      (ticket) => ticket.id != p.id,
+    );
+    setInProgressTickets(stillUnsolved);
+  };
 
   const inProgressNumber = inProgressTickets.length;
   const resolvedNumber = completedTickets.length;
@@ -58,6 +56,7 @@ function App() {
               inProgressTickets={inProgressTickets}
               setCompletedTickets={setCompletedTickets}
               completedTickets={completedTickets}
+              removeTickets={removeTickets}
             ></TaskStatus>
 
             {/* Resolved Task */}

@@ -4,6 +4,7 @@ function TaskStatus({
   inProgressTickets,
   setCompletedTickets,
   completedTickets,
+  removeTickets,
 }) {
   return (
     <>
@@ -23,6 +24,7 @@ function TaskStatus({
                 progressTicket={progressTicket}
                 setCompletedTickets={setCompletedTickets}
                 completedTickets={completedTickets}
+                removeTickets={removeTickets}
                 key={progressTicket.id}
               ></InProgressTicket>
             ))}
