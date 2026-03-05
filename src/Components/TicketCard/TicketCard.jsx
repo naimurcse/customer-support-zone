@@ -6,6 +6,7 @@ function TicketCard({
   setInProgressTickets,
   inProgressTickets,
   completedTickets,
+  removeFromCustomerTicketList,
 }) {
   // console.log(setInProgressTickets);
 
@@ -20,6 +21,8 @@ function TicketCard({
     }
     toast("Ticket is added successfully!");
     setInProgressTickets([selectedTicket, ...inProgressTickets]);
+
+    removeFromCustomerTicketList(selectedTicket);
   };
 
   const { title, description, customer, priority, status, createdAt, id } =

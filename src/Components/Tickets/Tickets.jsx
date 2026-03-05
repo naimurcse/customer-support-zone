@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import TicketCard from "../TicketCard/TicketCard";
 
 function Tickets({
@@ -9,6 +9,14 @@ function Tickets({
 }) {
   const tickets = use(ticketsPromise);
   // console.log(setInProgressTickets);
+  const [allTickets, setAllTickets] = useState(tickets);
+  const removeFromCustomerTicketList = (issue) => {
+    const remainingCustomerTickets = allTickets.filter(
+      (ticket) => ticket.id != issue.id,
+    );
+    setAllTickets([...remainingCustomerTickets]);
+  };
+
   return (
     <>
       <h3 className="text-2xl font-bold text-gray-700 mb-2">
@@ -17,43 +25,15 @@ function Tickets({
 
       {/* Ticket Cards in two columns */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        {/* Ticket Card */}
-        {/* <div className="px-4 py-6 bg-white shadow">
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="font-semibold text-gray-800">
-              Login Issues - Can't Access Account
-            </h3>
-            <button>Open</button>
-          </div>
-          <p className="text-sm text-gray-600 mb-5">
-            Customer is unable to log in to their account. They've tried
-            resetting their password multiple times but still...
-          </p>
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2 text-sm">
-              <p className="text-gray-600">#1001</p>
-              <p className="uppercase text-red-500 font-semibold">
-                High Priority
-              </p>
-            </div>
-
-            <div className="flex items-center gap-2 text-sm">
-              <p className="text-gray-600">Jhon Smith</p>
-              <div className="flex items-center gap-1">
-                <img className="w-4" src={dateIcon} alt="" />
-                <p>1/16/2024</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {tickets.map((ticket) => (
+        {/* Ticket Cards */}
+        {allTickets.map((ticket) => (
           <TicketCard
             key={ticket.id}
             ticket={ticket}
             setInProgressTickets={setInProgressTickets}
             inProgressTickets={inProgressTickets}
             completedTickets={completedTickets}
+            removeFromCustomerTicketList={removeFromCustomerTicketList}
           ></TicketCard>
         ))}
       </div>
