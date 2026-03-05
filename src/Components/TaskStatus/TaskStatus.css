@@ -1,0 +1,9 @@
+.ticket-card {
+  box-shadow: rgba(0, 0, 0, 0.055) 0px 4px 12px;
+  transition: 0.5s;
+}
+.ticket-card:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}

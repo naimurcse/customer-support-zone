@@ -1,9 +1,9 @@
 import { use } from "react";
 import TicketCard from "../TicketCard/TicketCard";
 
-function Tickets({ ticketsPromise }) {
+function Tickets({ ticketsPromise, setInProgressTickets, inProgressTickets }) {
   const tickets = use(ticketsPromise);
-  console.log(tickets);
+  // console.log(setInProgressTickets);
   return (
     <>
       <h3 className="text-2xl font-bold text-gray-700 mb-2">
@@ -43,7 +43,12 @@ function Tickets({ ticketsPromise }) {
         </div> */}
 
         {tickets.map((ticket) => (
-          <TicketCard key={ticket.id} ticket={ticket}></TicketCard>
+          <TicketCard
+            key={ticket.id}
+            ticket={ticket}
+            setInProgressTickets={setInProgressTickets}
+            inProgressTickets={inProgressTickets}
+          ></TicketCard>
         ))}
       </div>
     </>

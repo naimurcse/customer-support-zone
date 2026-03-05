@@ -6,6 +6,7 @@
   border-radius: 50px;
 }
 .ticket-card {
+  box-shadow: rgba(0, 0, 0, 0.055) 0px 4px 12px;
   transition: 0.5s;
 }
 .ticket-card:hover {
