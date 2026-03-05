@@ -14,9 +14,9 @@ const ticketsPromise = fetch("/ticketsInJSON.json").then((res) => res.json());
 function App() {
   const [inProgressTickets, setInProgressTickets] = useState([]);
   const [completedTickets, setCompletedTickets] = useState([]);
-  const removeTickets = (p) => {
+  const removeTickets = (gotTicket) => {
     const stillUnsolved = inProgressTickets.filter(
-      (ticket) => ticket.id != p.id,
+      (ticket) => ticket.id != gotTicket.id,
     );
     setInProgressTickets(stillUnsolved);
   };
