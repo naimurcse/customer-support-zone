@@ -5,7 +5,7 @@ import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import LoadingSpinner from "./Components/LoadingSpinner/LoaderSpining";
 import Navber from "./Components/Navber/Navber";
-import ResolvedTask from "./Components/ResolvedTask/ResolvedTask";
+import ResolvedTasks from "./Components/ResolvedTasks/ResolvedTasks";
 import TaskStatus from "./Components/TaskStatus/TaskStatus";
 import Tickets from "./Components/Tickets/Tickets";
 
@@ -20,9 +20,9 @@ function App() {
   // const removeTickets = (p) => {
   //   console.log(p);
   // };
+  console.log(inProgressTickets);
   console.log(completedTickets);
 
-  console.log(completedTickets);
   const inProgressNumber = inProgressTickets.length;
   const resolvedNumber = completedTickets.length;
   return (
@@ -61,7 +61,7 @@ function App() {
             ></TaskStatus>
 
             {/* Resolved Task */}
-            <ResolvedTask completedTickets={completedTickets}></ResolvedTask>
+            <ResolvedTasks completedTickets={completedTickets}></ResolvedTasks>
           </div>
         </div>
       </div>
