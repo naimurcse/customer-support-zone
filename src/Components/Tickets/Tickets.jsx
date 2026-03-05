@@ -1,7 +1,12 @@
 import { use } from "react";
 import TicketCard from "../TicketCard/TicketCard";
 
-function Tickets({ ticketsPromise, setInProgressTickets, inProgressTickets }) {
+function Tickets({
+  ticketsPromise,
+  setInProgressTickets,
+  inProgressTickets,
+  completedTickets,
+}) {
   const tickets = use(ticketsPromise);
   // console.log(setInProgressTickets);
   return (
@@ -48,6 +53,7 @@ function Tickets({ ticketsPromise, setInProgressTickets, inProgressTickets }) {
             ticket={ticket}
             setInProgressTickets={setInProgressTickets}
             inProgressTickets={inProgressTickets}
+            completedTickets={completedTickets}
           ></TicketCard>
         ))}
       </div>

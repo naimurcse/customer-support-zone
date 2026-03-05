@@ -45,6 +45,7 @@ function App() {
                 ticketsPromise={ticketsPromise}
                 setInProgressTickets={setInProgressTickets}
                 inProgressTickets={inProgressTickets}
+                completedTickets={completedTickets}
               ></Tickets>
             </Suspense>
           </div>

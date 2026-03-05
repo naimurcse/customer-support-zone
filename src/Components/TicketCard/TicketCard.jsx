@@ -1,11 +1,25 @@
 import { toast } from "react-toastify";
 import dateIcon from "../../assets/dateIcon.png";
 import "./TicketCard.css";
-function TicketCard({ ticket, setInProgressTickets, inProgressTickets }) {
+function TicketCard({
+  ticket,
+  setInProgressTickets,
+  inProgressTickets,
+  completedTickets,
+}) {
   // console.log(setInProgressTickets);
 
   const handleTickets = (selectedTicket) => {
-    setInProgressTickets([...inProgressTickets, selectedTicket]);
+    if (inProgressTickets.find((ticket) => ticket.id === selectedTicket.id)) {
+      toast("Already Added!");
+      return;
+    }
+    if (completedTickets.find((ticket) => ticket.id === selectedTicket.id)) {
+      toast("Already Solved!");
+      return;
+    }
+    toast("Ticket is added successfully!");
+    setInProgressTickets([selectedTicket, ...inProgressTickets]);
   };
 
   const { title, description, customer, priority, status, createdAt, id } =
@@ -15,7 +29,6 @@ function TicketCard({ ticket, setInProgressTickets, inProgressTickets }) {
       <div
         onClick={() => {
           handleTickets(ticket);
-          toast("Ticket is added successfully!");
         }}
         className="ticket-card px-4 py-6 bg-white shadow flex flex-col justify-between"
       >
